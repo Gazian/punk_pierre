@@ -30,7 +30,8 @@ const BeerContainer = ({ beer }) => {
     return (
         <div className="main-container">
             <h2>Beer List</h2>
-           Beer: <BeerList onBeerClick = {onBeerClick} beers={beers}/>
+            <h3>Choose your beer from the list for further information</h3>
+           <BeerList onBeerClick = {onBeerClick} beers={beers}/>
            {selectedBeer ? <BeerDetail beer={selectedBeer}/> : null}
         </div>
     )
